@@ -2,6 +2,8 @@
 
 An example SwiftUI app that uses a `UICollectionViewController` to render a masonry layout.
 
+![Video](Docs/MasonryTrimmed.mp4)
+
 ## Motivation
 
 While the masonry layout works well 🙌, the main reason for developing this project was to demonstrate interfacing with `UICollectionViewController` in a SwiftUI app. This is a useful (hybrid) option for when SwiftUI's stacks/grids/tables do not provide enough configuration.
