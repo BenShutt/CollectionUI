@@ -2,7 +2,7 @@
 
 An example SwiftUI app that uses a `UICollectionViewController` to render a masonry layout.
 
-![Video](Docs/MasonryTrimmed.mp4)
+![GIF](Docs/Masonry.gif)
 
 ## Motivation
 
