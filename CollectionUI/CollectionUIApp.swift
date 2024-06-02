@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct CollectionUIApp: App {
+@MainActor struct CollectionUIApp: App {
+    @State private var manager = Manager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(manager)
         }
     }
 }
