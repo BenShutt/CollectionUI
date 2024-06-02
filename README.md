@@ -16,7 +16,7 @@ The project is reasonably well documented, but here is a summary of the notable 
 
 ### MasonryColumns
 
-Stores a 2D array of columns and their vertically stacked items. When a new item is going to be added, the last element of each column is compared to see which has the least `maxY`. The shortest column then has the new item appended.
+Stores a 2D array of columns and their vertically stacked items. When a new item is going to be added, the last element of each column is compared to see which has the smallest `maxY`. The new item is then appended to the shortest column.
 
 ###  MasonryBuilder
 
@@ -24,7 +24,7 @@ Takes an array of models and computes their frames in the collection view.
 
 ### MasonryLayout
 
-A `UICollectionViewLayout` subclass that overrides the necessary methods serving the layout attributes.
+A `UICollectionViewLayout` subclass that overrides the necessary methods and serves the layout attributes.
 
 ### CollectionView
 
@@ -36,8 +36,8 @@ Properties that configure how the masonry layout will look in the `UICollectionV
 
 ### Manager
 
-An example of an `@Observable` that loads models (via an dummy asynchronous load) for layout in the masonry.
+An example of an `@Observable` that loads models (via a dummy asynchronous load) for layout in the masonry.
 
 ### Model
 
-A simply dummy model that is rendered in the cells. They each have a fixed and random height to achieve the masonry design.
+A simply dummy model that is rendered as cells in the collection view. They each have a random (and then fixed) height to achieve the masonry design.
