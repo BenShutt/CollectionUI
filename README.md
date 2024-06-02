@@ -2,7 +2,7 @@
 
 An example SwiftUI app that uses a `UICollectionViewController` to render a masonry layout.
 
-<img src="Docs/Masonry.gif" width="200"/>
+<img src="Docs/Masonry.gif" width="400"/>
 
 ## Motivation
 
