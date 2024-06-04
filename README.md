@@ -6,7 +6,7 @@ An example SwiftUI app that uses a `UICollectionViewController` to render a maso
 
 ## Motivation
 
-While the masonry layout works well 🙌, the main reason for developing this project was to demonstrate interfacing with `UICollectionViewController` in a SwiftUI app. This is a useful (hybrid) option for when SwiftUI's stacks/grids/tables do not provide enough configuration.
+The _primary_ reason for developing this project was to demonstrate interfacing with `UICollectionViewController` in a SwiftUI app. This is a useful (hybrid) option for when SwiftUI's stacks/grids/tables do not provide enough configuration.
 
 It is worth mentioning that a pure SwiftUI solution should be attempted first. There are also other ways to specify the layout of a `UICollectionView`, this project's subclassing of `UICollectionViewLayout` may be a little on the old side, but gives the developer a lot of control. `UICollectionView`'s re-usable cells that only render when visible are definitely preferable to a SwiftUI solution that renders all when the data set is large.
 
@@ -28,7 +28,7 @@ A `UICollectionViewLayout` subclass that overrides the necessary methods and ser
 
 ### CollectionView
 
-A `UIViewControllerRepresentable` that wraps a `UICollectionViewController` with a custom `MasonryLayout`. Cells are configured with SwiftUI's [UIHostingConfiguration](https://developer.apple.com/documentation/SwiftUI/UIHostingConfiguration).
+A `UIViewControllerRepresentable` that wraps a `UICollectionViewController` with a custom `MasonryLayout`. Cell content is configured with SwiftUI's `UIHostingConfiguration`.
 
 ### MasonryConfiguration
 
