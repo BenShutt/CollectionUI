@@ -14,7 +14,7 @@ class MasonryLayout: UICollectionViewLayout {
     typealias AttributesMap = [IndexPath: UICollectionViewLayoutAttributes]
 
     /// The content to layout in the collection view
-    var manager = Manager(shouldRefresh: false) {
+    var manager: Manager? {
         didSet {
             redrawLayout()
             invalidateLayout()
@@ -79,7 +79,7 @@ class MasonryLayout: UICollectionViewLayout {
 
     /// Reset and re-build the layout properties
     private func redrawLayout() {
-        guard let collectionView else {
+        guard let collectionView, let manager else {
             columns = MasonryColumns()
             attributes = [:]
             return

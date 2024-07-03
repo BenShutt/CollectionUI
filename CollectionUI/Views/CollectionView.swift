@@ -33,7 +33,7 @@ class CollectionViewController: UICollectionViewController {
         return layout
     }
 
-    var manager: Manager {
+    var manager: Manager? {
         get {
             layout.manager
         }

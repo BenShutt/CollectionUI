@@ -24,12 +24,9 @@ import SwiftUI
 
     // MARK: - Init
 
-    /// Initialize the manager, refreshing if necessary
-    /// - Parameter shouldRefresh: Should refresh on initialization
-    init(shouldRefresh: Bool = true) {
-        if shouldRefresh {
-            refresh()
-        }
+    /// Initialize the manager and refresh the models
+    init() {
+        refresh()
     }
 
     // MARK: - Refresh
